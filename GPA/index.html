@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Узнай свой средний балл</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="sweetalert.js"></script>
+
+</head>
+<body id="body">
+<h1 class="md-text">Рассчитай свой средний балл</h1>
+<h1 class="outputGPA"></h1>
+<div class="input-group mb-3">
+    <input type="text" class="form-control"
+           aria-label="Default"
+           aria-describedby="inputGroup-sizing-default"
+           id="input"
+           readonly>
+</div>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="btnClear btn-danger ml-3 mb-3" id="btnClear">Очистить</button>
+        <button type="button" class="btnBack btn-success ml-3 mb-3">Назад</button>
+    </div>
+</div>
+
+<div class="btn-group btn-group-lg" role="group" id="btn-group">
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-groupOne mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary mr-2">1</button>
+            <button type="button" class="btn btn-secondary mr-2">2</button>
+            <button type="button" class="btn btn-secondary mr-2">3</button>
+            <button type="button" class="btn btn-secondary mr-2">4</button>
+            <button type="button" class="btn btn-secondary mr-2">5</button>
+        </div>
+    </div>
+</div>
+<div class="btn-group btn-groupTwo btn-group-lg mt-3" role="group" aria-label="..." id="appTwo">
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary mr-2 mt-4">6</button>
+            <button type="button" class="btn btn-secondary mr-2 mt-4">7</button>
+            <button type="button" class="btn btn-secondary mr-2 mt-4">8</button>
+            <button type="button" class="btn btn-secondary mr-2 mt-4">9</button>
+            <button type="button" class="btn btn-secondary mr-2 mt-4">10</button>
+        </div>
+    </div>
+</div>
+<div class="btn-toolbarTwo" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-secondary mr-2 mt-5" id="addGPA">Рассчитать балл</button>
+        <span id="icon-settings"><img src="img/settingsIcon.png" alt="Настройки" class="icon-settings mt-5 ml-2"></span>
+    </div>
+</div>
+<h1 class="textBall mt-3">Ваш балл: <span id="textGPA"> </span></h1>
+<script src="script.js"></script>
+</body>
+</html>
